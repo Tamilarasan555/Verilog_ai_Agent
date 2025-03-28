@@ -1,0 +1,28 @@
+# See https://pre-commit.com for more information
+# See https://pre-commit.com/hooks.html for more hooks
+repos:
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.6.0 # Use a recent, stable version
+    hooks:
+    -   id: trailing-whitespace
+    -   id: end-of-file-fixer
+    -   id: check-yaml
+    -   id: check-added-large-files
+    -   id: check-toml
+-   repo: https://github.com/psf/black
+    rev: 24.2.0 # Match version in pyproject.toml
+    hooks:
+    -   id: black
+        args: [--line-length=100] # Match config in pyproject.toml
+-   repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.3.0 # Match version in pyproject.toml
+    hooks:
+    -   id: ruff
+        args: [--fix, --exit-non-zero-on-fix] # Auto-fix issues
+    -   id: ruff-format # Use ruff's formatter if preferred, or stick to black
+-   repo: https://github.com/pre-commit/mirrors-mypy
+    rev: v1.8.0 # Match version in pyproject.toml
+    hooks:
+    -   id: mypy
+        additional_dependencies: [types-pyyaml] # Add any needed types-* packages
+        args: [--config-file=pyproject.toml] # Point to existing config
