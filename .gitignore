@@ -1,0 +1,46 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+.pytest_cache/
+.coverage
+htmlcov/
+.ruff_cache/
+.mypy_cache/
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+
+# IDE-specific files
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# Project-specific
+logs/
+*.log
+mcp_output/
+test_output/
+.env
+.env.*
+!.env.example
+
+# Verilog-specific
+*.vcd
+*.fsdb
+*.vpd
+*.wlf
+*.log
+*.rpt
+*.sdf
+*.spef
+*.timing
+*.power
+*.area
