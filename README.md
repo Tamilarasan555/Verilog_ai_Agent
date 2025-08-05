@@ -1,6 +1,6 @@
 # MCP Verilog
 
-A Mission Control Protocol (MCP) server with Verilog AI Agent integration for automated Verilog code generation, optimization, verification, and documentation.
+A Model Control Protocol (MCP) server with Verilog AI Agent integration for automated Verilog code generation, optimization, verification, and documentation.
 
 ## Features
 
@@ -8,7 +8,7 @@ A Mission Control Protocol (MCP) server with Verilog AI Agent integration for au
 - **Design Optimization**: Optimize Verilog designs for area, power, and timing
 - **Design Verification**: Verify designs with testbenches and assertions
 - **Documentation Generation**: Generate comprehensive documentation
-- **MCP Integration**: Seamless integration with Mission Control Protocol
+- **MCP Integration**: Seamless integration with Model Control Protocol
 - **RESTful API**: HTTP endpoints for all operations
 - **Development Tools**: Code formatting, type checking, and linting
 
